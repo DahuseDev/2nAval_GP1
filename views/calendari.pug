@@ -1,0 +1,16 @@
+extends layout
+block scripts 
+  script(src='/javascripts/calendari.js')
+block content
+  div(class="contentCalendar")
+    canvas(id="tauler" width="950" height="550")
+    div(id="createEvent")
+      form(id="formEvents" onsubmit="return false;")
+        h1(class="crearesdeveniment") Crear esdeveniment 
+        a(class="esdeveniment") Activitat:
+        select(name="activitat" id="selectEvent" required)
+        br
+        a(class="esdeveniment") Data:
+          input(type="date" min="2023-03-01" max="2023-03-31" name="data" required)
+          a(href="/afegirActivitat")
+           button(id="submitEvent") Enviar

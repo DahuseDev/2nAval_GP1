@@ -1,0 +1,17 @@
+html 
+    head
+        script(src='/javascripts/login.js')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        div(class="contentLogin")
+            div(class="main")
+                input(type="checkbox" id="chk" aria-hidden="true")
+                div(class="login")
+                    form(onsubmit="return false;")
+                        label Login 
+                        input(type="Username" id="login_username" placeholder="Username" required)
+                        input(type="password" id="login_password" placeholder="Password" required)
+                        button(id="loginbtn" type="submit") Login 
+                    div(id="loginerror")
+                        p Error: Usuari o contrasenya incorrectes 
+

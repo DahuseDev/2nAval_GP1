@@ -1,0 +1,624 @@
+
+/***************************************************/
+/*******************            ********************/
+/*******************    MAIN    ********************/
+/*******************            ********************/
+/***************************************************/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+form a,.nav a{
+  color:inherit;
+  text-decoration: none;
+}
+.nav{
+  height: 100%;
+  height: 15%;
+  padding-top: 10px;
+  display:flex;
+  justify-content: space-around;
+  background-color: rgb(14, 18, 72);
+  font-size: 30px;
+}
+.nav a{
+  color: white;
+  padding: 20px;
+  height: fit-content;
+}
+.nav a:hover{
+  color:aquamarine
+}
+.content{min-height: 68%;}
+.element5{
+	margin-left: auto;
+	width: fit-content;
+	text-align: left;
+	padding:0px 20px;
+	border: 1px solid black;
+	font-size: 20px;
+	color: white;
+}
+.element5 #headerLogout{
+	cursor: pointer;	
+	font-style: italic;
+}
+
+
+/**************************************************/
+/*******************           ********************/
+/*******************   INDEX   ********************/
+/*******************           ********************/
+/**************************************************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Open+Sans:wght@300&display=swap');
+
+
+
+
+
+#iniciImage{
+	width: 100%;
+	height: 65%;
+	background-image:url('/images/info.png');
+}
+
+.dark{	
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.wrapper{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+    display: grid;
+    place-items: center; 
+
+}
+
+
+.typing-demo{
+    width: 39ch; 
+    animation: typing 2s steps(22), blink .5s step-end infinite; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 7px solid; 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from{
+        width:  0
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent
+    }
+}
+
+/**************************************************/
+/*******************           ********************/
+/*******************   LOGIN   ********************/
+/*******************           ********************/
+/**************************************************/
+.contentLogin{min-height: 68%;display:flex;align-items: center;justify-content: center; width:100%;}
+.contentLogin *{
+  box-sizing:content-box;
+}
+
+.main{
+	width: 350px;
+	height: 300px;
+    padding-top: 150px;
+	background: red;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.login label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.login input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.login button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+.login button:hover{
+	background: #6d44b8;
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #573b8a;
+	transform: scale(.6);
+}
+#loginerror{
+	display: none;
+	text-align: center;
+	background-color: rgba(255, 0, 0,0.7);
+	margin-left: 5%;
+	margin-top: 10%;
+	padding: 2%;
+	width: 86%;
+}
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+
+/***************************************************/
+/*******************            ********************/
+/*******************  CALENDAR  ********************/
+/*******************            ********************/
+/***************************************************/
+
+#createEvent{
+	border-radius: 20px;
+	background-color: aliceblue;
+	border: 2px solid black;
+	font-size: 20px;
+	width: 30%;
+	margin-right: 3%;
+}
+
+.crearesdeveniment{
+  margin-top: 10px;
+}
+
+#createEvent h1{
+	text-align: center;
+	font-family: American Typewriter (serif);
+}
+#createEvent select{
+	margin-left: 20px;
+	margin-bottom: 10px;	
+	width: fit-content;
+	height: 30px;
+}
+#createEvent input{
+	margin-bottom: 10px;
+	height: 30px;
+	margin-left: 10px;
+}
+#createEvent button{
+	cursor: pointer;
+	float: right;
+	width: 90px;
+	height: 40px;
+	background-color: #a9d3ed;
+	color: rgb(0, 0, 0);
+	margin-right: 60px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.esdeveniment{
+	padding-left: 10%;
+}
+
+canvas{display: block;border:0px none black;}
+.contentCalendar{min-height: 68%;display:flex;align-items: center; width:100%;}
+#calendar{width: 70%;height: 100%;display: flex;align-items: center;}
+
+
+/***************************************************/
+/*******************            ********************/
+/*******************  ABOUT US  ********************/
+/*******************            ********************/
+/***************************************************/
+
+
+.quisomTitle{
+  display: flex;
+	justify-content: center;
+}
+
+.quisomText{
+  display: flex;
+	justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.quisomButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+@keyframes boto {
+  from{
+    transform: translateY(300px)
+  }
+
+  to{
+    transform: translateX(0px); 
+  }
+}
+
+
+.quisomButton button{
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5em 1em;
+  margin-bottom: 30px;
+  border: 2px solid;
+  border-radius: 7px;
+  background-image: linear-gradient(to right, #6587f6 0%, #69e4d9 51%, rgb(171, 248, 253) 100%);
+  box-shadow: 1px 1px 1px 1px;
+  
+}
+
+
+/* FOOTER*/
+.footer{
+	background-color: #072145;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	padding-top: 1%;
+	font-size: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+}
+
+
+.adalt{
+	height: 66%;
+}
+.abaix{
+	background-color: rgb(28, 68, 90);
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	color: #e0dede;
+}
+
+
+/*ADMIN*/
+
+#mostrarUsers,#mostrarActivitats{
+	display: flex;
+	margin-top: 20px;
+	flex-direction: column;
+	width: 75%;
+}
+#user,#activitat{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(97, 204, 239);
+	border-radius: 2%;
+	padding: 30px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	margin-left: 30%;
+	border: 2px solid black;
+}
+#user > div{
+	padding: 10px 5px 0px 5px;
+	line-height: 100%;
+}
+#username{
+	width: 100%;
+	grid-area: 1;
+	
+}
+#name{
+	width: 100%;
+	grid-area: 2;
+}
+#surname{
+	width: 100%;
+	grid-area: 3;
+}
+#role{
+	text-align: center;
+	width: 100%;
+}
+#role select{
+	background-color: inherit;
+}
+#button{
+	text-align: right;
+	width: 50%;
+}
+.borrar{
+	color: red;
+	cursor: pointer;
+}
+.borrarA{
+	min-width: 5%;
+}
+#data{
+	width: 40%;
+}
+#nomActivitat{
+	width: 40%;
+}
+.enviar{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	padding: 15px 25px;
+	color: #eee;
+	border: 4px #ffffff solid;
+	background-color: transparent;
+}
+#borrarh,.modificarh{
+	min-width: 5%;
+}
+
+.modificar{
+	cursor: pointer;
+}
+.modificar img{
+	width: 20px;
+}
+.x{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	cursor: pointer;
+}
+.addUsers{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(116, 116, 212);
+
+}
+
+.addUsers label{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+
+#afegirUsuari{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background-color: #ffffff80;
+	width: 100%;
+	height: 85%;
+}
+#afegirUsuari form{
+	display: grid;
+	grid-template-areas:'a b c x' 'aa bb cc dd''d name surname e' 'f username password g' 'h role enviar i' 'qq ww ee rr' 'j k l m';
+	grid-template-columns: 10% 40% 40% 10%;
+	grid-template-rows: 10% 15% 15% 15% 15% 15% 10%;
+	background-image: linear-gradient(to right bottom, #355371, #007aa1, #00a3b3, #00ca9c, #21eb61);	
+	width: 30%;
+	height: 50%;
+	
+}
+#afegirUsuari form > *{
+	height:30px;
+	
+}
+#afegirUsuari #x{
+	grid-area: x;
+}
+#afegirUsuari #username{
+	grid-area: username;
+}
+#afegirUsuari #nom{
+	grid-area: name;
+}
+#afegirUsuari #password{
+	grid-area: password;
+}
+#afegirUsuari #cognom{
+	grid-area: surname;
+}
+#afegirUsuari #role{
+	grid-area: role;
+}
+#afegirUsuari #enviar{
+	grid-area: enviar;
+}
+
+
+.bUsuaris{
+	font-weight: bold;
+	background: linear-gradient(to right bottom, #cee088, #64d59a, #00c1c6, #00a4e9, #217be3);
+	background-size: 200%;
+    background-position: right;
+	transition: background 1s ease-out;  
+	width: 50%;
+	height: 65%;
+}
+
+.bUsuaris:hover{
+	background-position: left;
+}
+
+.bActivitats{
+	background-image: linear-gradient(to right bottom, #1c17f3, #a900b9, #cb0086, #cf1f63, #c45454);
+    background-size: 200%;
+	font-weight: bold;
+    background-position: right;
+	transition: background 1s ease-out; 
+	width: 50%;
+	height: 65%;
+}
+
+.bActivitats:hover{
+	background-position: left;
+}
+
+
+
+
+/* Chat */
+
+#chatContent::-webkit-scrollbar {
+	display: none;
+}
+#chat{
+	position: fixed;
+	border-radius: 10px 10px 0px 0px;
+	bottom: -34%;
+	right: 5%;
+	width: 15%;
+	height: 40%;
+	background-color: aliceblue;
+	border: blue 1px solid;
+}
+#chatHeader{
+	cursor:pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: blue 1px solid;
+	height: 15%;
+}
+#chatHeader > div:first-child{
+	font-weight: bold;
+	width: 60%;
+}
+#chatHeader > div:last-child{
+	width: 20%;
+}
+#chatContent{
+	height: 65%;
+	gap: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 5% 5%;
+    overflow-y: auto;
+    overflow-anchor: bottom;
+    display: flex;
+    flex-direction: column;
+}
+#chatInput{
+	padding: 5%;
+    line-height: 100%;
+    align-items: center;
+    height: 10%;
+    margin: 5% 5%;
+    border: 1px solid lightblue;
+    overflow-y: auto;
+}
+
+#pendingMessage{
+	align-self: right;
+	justify-content: center;
+	display: none;
+	border-radius: 100%;
+	border:2px solid green;
+	width: 25px;
+	text-align: center;
+	height: 25px;
+	font-weight: bold;
+}
+#missatgeCont{
+	max-width: 100%;
+	display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+#missatge{
+	width: 100%;
+}
+#missatgeInner{
+	word-wrap: break-word;
+	max-width: 100%;
+	padding: 2px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#missatgeInfo{
+	padding: 2px;
+	font-size: 10px;
+}
+.missatgeInnerMe #missatgeInner{
+	background-color: lightgreen;
+}
+.missatgeInnerOther #missatgeInner{
+	background-color: lightblue;
+}
+.missatgeInnerOther{
+	margin-left: auto;
+}
+
+.missatgeInnerOther #missatgeInfo {
+    text-align: right;
+}

@@ -1,0 +1,27 @@
+extends layout
+block scripts
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200") 
+    script(src='/javascripts/admin.js')
+block content
+    div(id="afegirUsuari")
+        form(onsubmit="return false;")
+            div(class="x" id="x")
+                p x
+            input(type="text" id="username" placeholder="Username")    
+            input(type="password" id="password" placeholder="Password")
+            select(id="role") 
+                option(value="1") Admin
+                option(value="0") User
+            input(type="text" id="nom" placeholder="Nom")
+            input(type="text" id="cognom" placeholder="Cognom")
+            button(type="submit" id="enviar" class="enviar" ) Enviar
+    h3 
+        div(id="mostrarUsers")
+        
+    div(class="quisomButton")
+        button(id="afegirUsuariBtn") Afegir Usuaris
+
+            
+    
+      
+

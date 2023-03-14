@@ -1,0 +1,33 @@
+extends layout
+block scripts
+    script(src='/javascripts/admin.js')
+
+block fullPage
+    div(class="afegirUsuari")
+        form
+block content
+    h4 Afegir Usuari
+
+    div(class="addUsers")
+        form 
+            label Username 
+                input(type="text" id="username")    
+            br
+            label Password
+                input(type="password" id="password")
+            br
+            label Role
+                input(type="text" id="role")
+            br
+            label Nom
+                input(type="text" id="nom")
+            br
+            label Cognom
+                input(type="text" id="cognom")
+            br
+            a(href="/afegirUser")
+            button(type="submit" id="enviar" ) Enviar
+
+
+      
+

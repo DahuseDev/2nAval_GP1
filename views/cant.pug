@@ -1,0 +1,20 @@
+extends layout
+
+
+block content
+
+    div(class="cant")
+        div(class="contentCant")
+            video(id="video" src="media/cant.mp4" autobuffer="true" controls   type="video/mp4" poster="media/miniatura.png")
+                div(class="carta")
+                div(class="card" style="width: 18rem;")
+                        img(src="media/cant.png" class="card-img-top")
+                        div(class="card-body")
+                            h5(class="card-title") Josep Carreras 
+                            p(class="card-text") La seva càlida i bella veu, especialment en el registre mitjà, i la passió que posa en les interpretacions fan que sigui un gran intèrpret del repertori romàntic i verista italià
+                            a(href="https://ca.wikipedia.org/wiki/Josep_Carreras_i_Coll" class="btn btn btn-info d-flex justify-content-center") Saber més 
+            p(class="reservaCant") Vol reservar una quedada? Cliquí el botó de sota per realitzar-la!
+            a(href="/calendari" class="btn btn btn-info d-flex jusitify-content-center") Reservar
+
+
+

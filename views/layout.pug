@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous")
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascripts/index.js") 
+    block scripts
+  body
+    div(class="nav")
+      block header
+        each val, key in {'Inici': '/inici', 'Calendari': '/calendari', 'About us': '/aboutus',}
+          a(href=val)
+            div= key
+        a(id="adminPanel")
+        div(class="element5")
+          div(id="headerUsername")
+          div(id="headerRole")
+          div(id="headerLogout") Tanca la sessió
+    block content
+    
+    div(class="footer")
+      block footer
+      div(class="adalt")
+        h2 Pagina Oficial del Banc del Temps MADARO
+        a Aquesta pagina es manté  i es modifica sota l' equip de MADARO
+      div(class="abaix")
+        b @Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    div(id="chat")
+      div(id="chatHeader")
+        div Chat
+        div
+          div(id="pendingMessage")
+      div(id="chatContent")
+      div(id="chatInput" contentEditable)
+      
+      

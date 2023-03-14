@@ -1,0 +1,27 @@
+{
+  "name": "gp1-2ntrim",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "fs": "^0.0.1-security",
+    "http-errors": "~1.6.3",
+    "md5": "^2.3.0",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.9.1",
+    "monk": "^7.3.4",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/socket.io": "^3.0.2"
+  }
+}

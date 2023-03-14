@@ -1,0 +1,11 @@
+extends layout
+block scripts
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200") 
+    script(src='/javascripts/admin.js')
+block content
+
+    a(href="/usuaris")
+        button(class="bUsuaris") Usuaris 
+
+    a(href="/activitats")
+        button(class="bActivitats") Activitats

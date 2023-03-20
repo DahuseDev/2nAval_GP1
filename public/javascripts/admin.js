@@ -72,7 +72,7 @@ function mostrarActivitats (){
 
         output="<div id='activitat'><div id = 'nomActivitat'>Nom de la activitat</div><div id = 'data'>Data</div><div id='borrarA'></div></div>"; 
         for(const r of result){
-            output+=`<div id="activitat"><div id="nomActivitat" class="${r._id}-nomActivitat">${r.nomActivitat}</div><div id="data" class="${r._id}-data" contentEditable>${r.data}</div><div class="borrar" id ='${r._id}' onclick="borrarActivitat(this.id)">x</div></div>`  
+            output+=`<div id="activitat"><div id="nomActivitat" class="${r._id}-nomActivitat">${r.nomActivitat}</div><div id="data" class="${r._id}-data">${r.data}</div><div class="borrar" id ='${r._id}' onclick="borrarActivitat(this.id)">x</div></div>`  
         }
 
         output+= "</tbody></table>"; 

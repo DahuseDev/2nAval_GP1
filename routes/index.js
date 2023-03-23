@@ -20,6 +20,11 @@ router.get('/calendari', function(req,res, next){
   
 });
 
+router.get('/localitzacio', function(req,res, next){
+  res.render('localitzacio');
+  
+});
+
 
 router.get('/admin', function(req, res, next){
   res.render('adminMenu'); 

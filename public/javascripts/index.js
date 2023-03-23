@@ -85,21 +85,3 @@ function login(){
         location.href="/";
     }    
 }
-// $.getJSON('http://ws.geonames.org/countryCode',)  
-//   var userRegion;
-//   var userCity;
-//   var userCountry;
-//   var userTimeZone;
-  
-//   if (Intl) {
-//     userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-//     var tzArr = userTimeZone.split("/");
-//     userRegion = tzArr[0];
-//     userCity = tzArr[tzArr.length - 1];
-//     userCountry = timeZoneCityToCountry[userCity];
-//   }
-  
-//   console.log("Time Zone:", TimeZone);
-//   console.log("Region:", userRegion);
-//   console.log("City:", userCity);
-//   console.log("Country:", userCountry);

@@ -10,7 +10,7 @@ html
   body
     div(class="nav")
       block header
-        each val, key in {'Inici': '/inici', 'Calendari': '/calendari', 'About us': '/aboutus',}
+        each val, key in {'Inici': '/inici', 'Calendari': '/calendari', 'About us': '/aboutus','Mapa': '/localitzacio',}
           a(href=val)
             div= key
         a(id="adminPanel")
